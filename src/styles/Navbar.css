@@ -1,0 +1,148 @@
+.navbar {
+  width: 100%;
+  height: 100px;
+  /* background: #21325e;
+  background-color: #3e497a;
+  background-image: linear-gradient(to top,#131313 0%, #21325e 21%, #2E4684 52%, #2E4684 100%); */
+  z-index: 999;
+  /* justify-content: space-between; */
+  position: absolute;
+  /*transition: all 0.3s ease; */
+  display: inline-block;
+}
+
+.navbar.sticky {
+  position: sticky;
+  padding: 15px 0;
+  background: blue;
+}
+.navbar .logo a {
+  font-size: 35px;
+  font-weight: 550;
+  /* display: flex; */
+  /* float: left; */
+  /* width: 50%; */
+}
+
+.logo a span {
+  color: #131313;
+  color: #21325e;
+  background-image: linear-gradient(
+    to left,
+    #21325e 0%,
+    #2e4684 21%,
+    #3b5aaa 52%,
+    #2e4684 78%,
+    #21325e 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.links {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  /* width: calc(50% -30px); */
+  /* float: right; */
+  /* width: 50%; */
+}
+
+.column .left {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.column .right {
+  width: 50%;
+}
+
+.navbar a {
+  color: #131313;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
+  /* position: absolute; */
+}
+
+.toggleButton {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: -100px;
+}
+
+.toggleButton svg {
+  font-size: 50px;
+}
+.toggleButton button {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  color: #131313;
+  cursor: pointer;
+}
+
+#open {
+  height: 100vh;
+  background-color: #3e497a;
+}
+
+#open .links {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+
+#open a {
+  width: 100%;
+  text-align: center;
+}
+/* #close a {
+    display: none;
+  } */
+
+.line {
+  background: #131313;
+  height: 5px;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* @media only screen and (max-width: 900px) {
+    .navbar a {
+      width: 70px;
+    }
+  }
+   */
+@media only screen and (max-width: 600px) {
+  .toggleButton {
+    display: flex;
+  }
+  #close a {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .toggleButton {
+    display: none;
+  }
+
+  #open {
+    height: 100px;
+  }
+
+  #open .links {
+    flex-direction: row;
+  }
+}
