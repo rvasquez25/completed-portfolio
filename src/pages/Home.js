@@ -5,13 +5,15 @@ import pic from "../assets/dudeandi.jpg";
 import cpCertification from "../assets/CodepathCertification.png";
 // My favorites: 2, 4, 5, 6, 7, 8
 // Israels: 4, 2, 6
-import video from "../assets/homeVideo4.mp4";
+// import video from "../assets/homeVideo4.mp4";
+import homeBg from "../assets/homeBackgroundPic.jpg"
 
 function Home() {
   return (
     <div className="home">
       <div className="overlay">
-        <video src={video} autoPlay loop muted />
+        {/* <video src={video} autoPlay loop muted /> */}
+        <img src={homeBg} alt="Missing Imagery" ></img>
       </div>
       {/* <div style={{display: "grid", gridTemplateColumns: "repeat(2, 1fr)" }} className = "flex-container"> */}
       <div className="about">
