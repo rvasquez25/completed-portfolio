@@ -84,11 +84,12 @@ function Experience() {
             Web Developer at SPS ARS Aerial Remote Sensing
           </h3>
           <p>
-          Currently assigned as Team Lead in efforts to get the company self-compliant through NIST MEP Cybersecurity Handbook
-          . Planning and attending weekly meetings to provide and receive work-related updates. Assigning tasks to the team in effor
-          ts to become self-compliant through NIST. Accomplished tasks assigned by a Senior Developer by using problem-solving skills t
-          o resolve issues or add web features.
-
+          Assisting in front-end and back-end development to create and improve features related 
+          to advanced unmanned aircrafts. Assigned as Team Lead in efforts to get the company 
+          self-compliant through NIST MEP Cybersecurity Handbook. Planning and attending 2-5 weekly 
+          meetings to provide and receive work-related updates. Assigning tasks to the team in efforts 
+          to become self-compliant through NIST. Accomplished tasks assigned by a Senior Developer 
+          by using problem-solving skills to resolve issues or add web features.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
