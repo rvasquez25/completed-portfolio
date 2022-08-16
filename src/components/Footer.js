@@ -9,7 +9,7 @@ function Footer() {
     <div className="footer">
       <div className="line"></div>
       <div className="socialMedia">
-        <a href="https://github.com/rvasquez25/personal-projects" target="_blank" rel="noreferrer">
+        <a href="https://github.com/rvasquez25/rosendos-personal-portfolio" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
         </a>
         {/* <a href="https://www.linkedin.com/in/rosendo-vasquez-ii-0b271519b" target="_blank" rel="noreferrer">
@@ -19,7 +19,7 @@ function Footer() {
             <FontAwesomeIcon icon={faEnvelope} />
         </a> */}
       </div>
-      <p> &copy; 2022 rosendo.com</p>
+      <p> &copy; 2022 https://flourishing-macaron-51d1a5.netlify.app/</p>
     </div>
   );
 }

@@ -79,3 +79,10 @@
       margin-left: 200px;
     }
   }
+
+  @media only screen and (max-width: 450px) {
+    .project p {
+      font-size: 30px;
+      margin-left: 0px;
+    }
+  }
