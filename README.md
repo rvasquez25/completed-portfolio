@@ -12,7 +12,7 @@ My favorite part of the portfolio was creating the projects section. I followed 
 <a href="https://flourishing-macaron-51d1a5.netlify.app/" target="new">Live website</a>
 
 **Home Page**
-<img src="" alt="Home Page">
+<img src="home.gif" alt="Home Page">
 **Projects Page**
 
 **Project Display Page**
