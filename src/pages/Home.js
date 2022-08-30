@@ -130,7 +130,7 @@ function Home() {
             <div className="bars">
               <div className="info">
                 <span>ReactJS</span>
-                <span>Intermediate</span>
+                <span>Beginner</span>
               </div>
               <div class="line react"></div>
             </div>
