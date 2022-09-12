@@ -3,8 +3,6 @@ import "../styles/Home.css";
 import Typewriter from "typewriter-effect";
 import pic from "../assets/dudeandi.jpg";
 import cpCertification from "../assets/CodepathCertification.png";
-// My favorites: 2, 4, 5, 6, 7, 8
-// Israels: 4, 2, 6
 // import video from "../assets/homeVideo4.mp4";
 import homeBg from "../assets/homeBackgroundPic.jpg"
 
