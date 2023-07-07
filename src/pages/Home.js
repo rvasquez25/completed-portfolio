@@ -1,8 +1,9 @@
 import React from "react";
 import "../styles/Home.css";
 import Typewriter from "typewriter-effect";
-import pic from "../assets/dudeandi.jpg";
+import pic from "../assets/newProfilePic.jpg";
 import cpCertification from "../assets/CodepathCertification.png";
+import udemyCert from "../assets/UdemyWebDevelopmentBootcampCertification.jpg"
 // import video from "../assets/homeVideo4.mp4";
 import homeBg from "../assets/homeBackgroundPic.jpg"
 
@@ -27,7 +28,7 @@ function Home() {
               {/* <span style={{ display: "inline-block" }}> */}
                 <Typewriter
                   options={{
-                    strings: ["Web Developer", "Ethical Hacker"],
+                    strings: ["Web Developer", "Software Developer"],
                     autoStart: true,
                     loop: true,
                   }}
@@ -36,7 +37,7 @@ function Home() {
             </div>
             <div className="prompt">
               <p>
-                A software developer with a passion for learning and creating with a focus in Cybersecurity
+                A software developer with a passion for learning and creating.
               </p>
             </div>
           </div>
@@ -138,6 +139,9 @@ function Home() {
       <div className="certifications">
         <h1>Certifications</h1>
         <img src={cpCertification} alt=""></img>
+      </div>
+      <div className="udemyCert">
+        <img src={udemyCert} alt = ""></img>
       </div>
     </div>
   );

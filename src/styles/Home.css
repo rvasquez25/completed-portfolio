@@ -88,7 +88,7 @@
 
 .homeImage img {
   height: 450px;
-  width: 360px;
+  width: 330px;
 }
 
 .skills {
@@ -300,6 +300,24 @@
   /* text-align: center; */
   /* line-height: 75px; */
 }
+.udemyCert {
+  width: 100%;
+  height: calc(100vh - 300px);
+  display: flex;
+  justify-content: center;
+  background-color: #131313;
+  flex-direction: column;
+  align-items: center;
+  font-size: 35px;
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 0px;
+}
+.udemyCert img {
+  width: 520px;
+  height: 400px;
+  z-index: 998;
+}
 
 .certifications {
   width: 100%;
@@ -430,6 +448,10 @@ video {
     width: 442px;
     height: 340px;
   }
+  .udemyCert img {
+    width: 442px;
+    height: 340px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -493,6 +515,10 @@ video {
 
   .certifications img {
     width: 364px;
+    height: 280px;
+  }
+  .udemyCert img {
+    width: 365px;
     height: 280px;
   }
 }

@@ -11,10 +11,11 @@ import {
   faBook,
   faRocket,
   faBolt,
+  faLaptopCode,
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Experience.css";
-import resume from "../assets/Resume1.pdf";
-import resumePic from "../assets/resume.png";
+import resume from "../assets/RosendoVasquezNewResume.pdf";
+import resumePic from "../assets/ResumePic.png";
 
 function Experience() {
   return (
@@ -23,7 +24,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2015 - 2019"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          iconStyle={{ background: "#131313", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faGraduationCap} />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -34,10 +35,10 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2016 - 2020"
-          iconStyle={{ background: "#131313", color: "#fff" }}
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faBolt} />}
         >
-          <h3 className="vertical-timeline-element-title">All-Star Electric</h3>
+          <h3 className="vertical-timeline-element-title">All-Star Electric - Apprentice Electrician</h3>
           <p>
             Manage inventory and keep track of supplies to prepare for the next
             job site. Prepare job sites by digging trenches, installing wiring,
@@ -53,7 +54,7 @@ function Experience() {
           icon={<FontAwesomeIcon icon={faHeadset} />}
         >
           <h3 className="vertical-timeline-element-title">
-            Technology Suppport at The University of Texas at El Paso
+            UTEP - Technology Support
           </h3>
           <p>
             Addressing issues daily via phone, email, or chat regarding password
@@ -65,7 +66,7 @@ function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2019 - Present"
+          date="Expected: December 2023"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faBook} />}
         >
@@ -76,20 +77,37 @@ function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2021 - Present"
+          date="October 2021 - May 2023"
           iconStyle={{ background: "#131313", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faRocket} />}
         >
           <h3 className="vertical-timeline-element-title">
-            Web Developer at SPS ARS Aerial Remote Sensing
+            SPS ARS - Web Developer/Network Operations
           </h3>
           <p>
-          Assisting in front-end and back-end development to create and improve features related 
-          to advanced unmanned aircrafts. Assigned as Team Lead in efforts to get the company 
-          self-compliant through NIST MEP Cybersecurity Handbook. Planning and attending 2-5 weekly 
-          meetings to provide and receive work-related updates. Assigning tasks to the team in efforts 
-          to become self-compliant through NIST. Accomplished tasks assigned by a Senior Developer 
-          by using problem-solving skills to resolve issues or add web features.
+          Assigned as Team Lead to successfully get the company self-compliant using NIST MEP Cybersecurity Handbook.
+          Created heartbeat service for 50+ devices using custom python scripts, API Integrations (Python) and NoSQL MongoDB to reduce daily checks from hours to seconds.
+          Troubleshooted bugs across distributed systems and successfully fixed issues to better overall performance.
+          Resolved issue of company devices organization by creating a hierarchy service to instantly store and track new devices. 
+
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="May 2023 - August 2023"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<FontAwesomeIcon icon={faLaptopCode} />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Dell - Software Development Intern
+          </h3>
+          <p>
+          Reduced validation process for various files provided by tax vendors from 30 days to 10 minutes.
+          Successfully handled validation using Spring boot and Spring MVC API integrations.
+          Reduced used storage in AWS s3 buckets by approximately 50% converting files to parquet.
+          Applied multi-threading techniques to increase scalability from a few users to large scale clients.
+          Provided clean and concise database design for Singlestore DB using mySQL.
+
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
