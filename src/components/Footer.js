@@ -9,7 +9,7 @@ function Footer() {
     <div className="footer">
       <div className="line"></div>
       <div className="socialMedia">
-        <a href="https://github.com/rvasquez25/completed-portfolio" target="_blank" rel="noreferrer">
+        <a href="https://github.com/rvasquez25/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
         </a>
         {/* <a href="https://www.linkedin.com/in/rosendo-vasquez-ii-0b271519b" target="_blank" rel="noreferrer">

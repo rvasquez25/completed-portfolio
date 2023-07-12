@@ -1,6 +1,6 @@
 .project {
     width: 100%;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,13 +17,26 @@
     width: 700px;
     border-radius: 10px;
   }
+  .project p b {
+    color: #3e497a;
+  }
   
   .project p {
-    font-size: 40px;
-    color: #3e497a;
-    /* display: flex;
-    justify-content: center;  */
+    font-size: 30px;
+    color: #131313;
+    width: 70%;
+    display: flex;
+    justify-content: center; 
+    /* align-items: center; */
+    flex-direction: row;
+    text-align: center;
   }
+  /* .project p h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } */
   
   .project svg {
     font-size: 60px;
@@ -35,6 +48,9 @@
     width: 650px;
   }
 
+  .icons {
+    color: #131313;
+  }
   /* @media only screen and (max-width: 800px) {
     .project img {
       height: 400px;

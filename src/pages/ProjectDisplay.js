@@ -17,6 +17,12 @@ function ProjectDisplay() {
       <div className="icons">
         {project.icons}
       </div>
+      <br></br>
+      <br></br>
+      <h1>About the Project</h1>
+      <p>
+        {project.about}
+      </p>
     </div>
   );
 }
