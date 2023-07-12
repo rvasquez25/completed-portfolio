@@ -252,6 +252,14 @@
   width: 23%
 }
 
+.skills-content .right .api::before{
+  width: 40%
+}
+
+.skills-content .right .db::before {
+  width: 35%
+}
+
 .title-right {
   margin-top: -100px;
   margin-bottom: 20px;

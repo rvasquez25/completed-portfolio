@@ -5,6 +5,9 @@ import pic from "../assets/newProfilePic.jpg";
 import cpCertification from "../assets/CodepathCertification.png";
 import udemyCert from "../assets/UdemyWebDevelopmentBootcampCertification.jpg"
 import video from "../assets/homeVideo4.mp4";
+
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // import homeBg from "../assets/homeBackgroundPic.jpg"
 
 function Home() {
@@ -39,6 +42,12 @@ function Home() {
               <p>
                 A software developer with a passion for learning and creating.
               </p>
+              <p>Click "
+                <a href="https://github.com/rvasquez25/" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+                 " icons to access respective github repositories :)
+              </p>
             </div>
           </div>
           <div class="column right">
@@ -60,13 +69,13 @@ function Home() {
             <div className="text">My Experience.</div>
             <p>
               I've began taking an interest in Computer Science before I started college in the Summer of 2019.
-              The first language I began learning was Python by watching videos on basic coding and data structures from
+              The first language I learned is Python by watching videos on basic coding and data structures from
               a youtuber named Corey Schafer. At UTEP, I've completed my first three years which have taught me more
-              in-depth about C, Java, and Python through courses such as <span>Intro to Computer Science</span>, <span>Elem. Data
-              Struct./Algorithms</span>, <span>Data Structures</span>, <span>Computer Security</span>, <span>Software Vulnerabilties</span>
-              , and <span>Computer Architecture</span>. I currently work for <span>SPS ARS</span> as a Web Developer who assists in
-              front-end and back-end development which has also helped me greatly in understanding the Quasar Framework in HTML, CSS, Javascript 
-              and back-end wise increasing my Python and Javascript abilties and understanding basic database management.
+              in-depth about C, Java, and Python through courses such as <span>Data Structures</span>, <span>Computer Security</span>, <span>Software Vulnerabilties</span>
+              , <span>Computer Architecture</span>, <span>Theory of OS</span>, <span>Software Engineering I & II</span>, <span>Database Management</span> and <span>Computer Networks</span>. 
+              I'm currently interning for <span>Dell</span> as a Software Development Intern who assists in back-end development. I began my
+              web/software development journey in October 2021 for <span>SPS ARS - Aerial Remote Sensing</span> and have been continuously growing
+              to better myself as a professional.
             </p>
             <a
               href="https://youtu.be/dQw4w9WgXcQ"
@@ -77,6 +86,34 @@ function Home() {
             </a>
           </div>
           <div className="column right">
+            <div className="bars">
+              <div className="info">
+                <span>ReactJS</span>
+                <span>Beginner</span>
+              </div>
+              <div class="line react"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>NodeJS</span>
+                <span>Intermediate</span>
+              </div>
+              <div class="line node"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>API Integration</span>
+                <span>Intermediate</span>
+              </div>
+              <div class="line api"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>Database Management</span>
+                <span>Intermediate</span>
+              </div>
+              <div class="line db"></div>
+            </div>
             <div className="bars">
               <div className="info">
                 <span>HTML</span>
@@ -118,20 +155,6 @@ function Home() {
                 <span>Intermediate</span>
               </div>
               <div class="line java"></div>
-            </div>
-            <div className="bars">
-              <div className="info">
-                <span>NodeJS</span>
-                <span>Intermediate</span>
-              </div>
-              <div class="line node"></div>
-            </div>
-            <div className="bars">
-              <div className="info">
-                <span>ReactJS</span>
-                <span>Beginner</span>
-              </div>
-              <div class="line react"></div>
             </div>
           </div>
         </div>
