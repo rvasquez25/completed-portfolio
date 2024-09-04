@@ -4,18 +4,18 @@ import Typewriter from "typewriter-effect";
 import pic from "../assets/newProfilePic.jpg";
 import cpCertification from "../assets/CodepathCertification.png";
 import udemyCert from "../assets/UdemyWebDevelopmentBootcampCertification.jpg"
-import video from "../assets/homeVideo4.mp4";
+// import video from "../assets/homeVideo4.mp4";
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-// import homeBg from "../assets/homeBackgroundPic.jpg"
+import homeBg from "../assets/homeBackgroundPic.jpg"
 
 function Home() {
   return (
     <div className="home">
       <div className="overlay">
-        <video src={video} autoPlay loop muted />
-        {/* <img src={homeBg} alt="Missing Imagery" ></img> */}
+        {/* <video src={video} autoPlay loop muted /> */}
+        <img src={homeBg} alt="Missing Imagery" ></img>
       </div>
       {/* <div style={{display: "grid", gridTemplateColumns: "repeat(2, 1fr)" }} className = "flex-container"> */}
       <div className="about">

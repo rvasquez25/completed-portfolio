@@ -12,6 +12,8 @@ import {
   faRocket,
   faBolt,
   faLaptopCode,
+  faCarBurst,
+  faComputer
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Experience.css";
 import resume from "../assets/RosendoVasquezNewResume.pdf";
@@ -23,7 +25,7 @@ function Experience() {
       <VerticalTimeline lineColor="#131313">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2015 - 2019"
+          date="August 2015 - May 2019"
           iconStyle={{ background: "#131313", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faGraduationCap} />}
         >
@@ -34,7 +36,7 @@ function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2016 - 2020"
+          date="June 2016 - August 2020"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faBolt} />}
         >
@@ -49,7 +51,7 @@ function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2019 - 2021"
+          date="July 2019 - October 2021"
           iconStyle={{ background: "#131313", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faHeadset} />}
         >
@@ -66,19 +68,8 @@ function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="Expected: December 2023"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
-          icon={<FontAwesomeIcon icon={faBook} />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            The University of Texas at El Paso, El Paso, TX
-          </h3>
-          <p>Undergraduate, Computer Science, SENIOR</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
           date="October 2021 - May 2023"
-          iconStyle={{ background: "#131313", color: "#fff" }}
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faRocket} />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -95,7 +86,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="May 2023 - August 2023"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          iconStyle={{ background: "#131313", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faLaptopCode} />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -107,6 +98,51 @@ function Experience() {
           Reduced used storage in AWS s3 buckets by approximately 50% converting files to parquet.
           Applied multi-threading techniques to increase scalability from a few users to large scale clients.
           Provided clean and concise database design for Singlestore DB using mySQL.
+
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="December 2023"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<FontAwesomeIcon icon={faBook} />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            The University of Texas at El Paso, El Paso, TX
+          </h3>
+          <p>Bachelor's of Science in Computer Science</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="September 2023 - January 2024"
+          iconStyle={{ background: "#131313", color: "#fff" }}
+          icon={<FontAwesomeIcon icon={faCarBurst} />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Fred Loya - ATR Clerk
+          </h3>
+          <p>
+          Assisted in day-to-day duties with a focus on claims needing attorney representation. Underwent training 
+          to understand insurance laws and how Fred Loya deals with claims and appointing the proper attorney to
+          represent clients in court.
+
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="February 2024 - Present"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<FontAwesomeIcon icon={faComputer} />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Dell - Software Engineer I
+          </h3>
+          <p>
+          Assigned as a Software Engineer I through Dell's IT Development Program which consists of three 
+          rotations through teams to gain a variety of experience and possibly shift career focus. Currently 
+          on the Tax IT team to apply full-stack development experience in automating various tax procedures 
+          such as cutting 100+ hours of manual file storages to an automated process that can take minutes
+          to complete.
 
           </p>
         </VerticalTimelineElement>
