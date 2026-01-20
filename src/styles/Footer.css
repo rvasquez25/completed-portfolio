@@ -1,44 +1,314 @@
+/* ==================== FOOTER STYLES ==================== */
+:root {
+  --bg-primary: #0a0f1a;
+  --bg-secondary: #111827;
+  --bg-card: #1a2235;
+  --accent-primary: #3b82f6;
+  --accent-secondary: #60a5fa;
+  --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #93c5fd 100%);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border-color: #2d3a52;
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  --transition: all 0.3s ease;
+}
+
 .footer {
   width: 100%;
-  height: 200px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding-top: 10px;
-  margin-top: 100px;
-  /* background: #21325e;
-    background-image: linear-gradient(to top,#131313 0%, #21325e 21%, #2E4684 52%, #2E4684 100%); */
-  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 5vw, 4rem);
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Footer Logo/Brand */
+.footer-brand {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-brand:hover {
+  opacity: 0.8;
+}
+
+/* Social Media Icons */
+.socialMedia {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 1.5rem);
+}
+
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(48px, 8vw, 56px);
+  height: clamp(48px, 8vw, 56px);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.socialMedia a:hover {
+  background: var(--bg-primary);
+  border-color: var(--accent-primary);
+  color: var(--accent-secondary);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.25);
 }
 
 .socialMedia svg {
-  color: #131313;
-  margin: 20px;
-  font-size: 65px;
-  cursor: pointer;
-  margin-top: 50px;
+  font-size: clamp(1.5rem, 4vw, 1.75rem);
 }
 
-.footer p {
-  color: #131313;
-}
-.line {
-  background: #131313;
-  height: 5px;
+/* Footer Divider */
+.footer-divider {
   width: 100%;
-  z-index: 1000;
+  max-width: 200px;
+  height: 1px;
+  background: var(--border-color);
+  margin: 0.5rem 0;
 }
 
+/* Footer Text */
+.footer p {
+  color: var(--text-muted);
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  text-align: center;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer p a {
+  color: var(--accent-secondary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer p a:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+/* Footer Navigation Links */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: clamp(0.875rem, 2vw, 0.9375rem);
+  font-weight: 500;
+  transition: var(--transition);
+  position: relative;
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  transition: var(--transition);
+  border-radius: 2px;
+}
+
+.footer-links a:hover {
+  color: var(--text-primary);
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
 
 @media only screen and (max-width: 600px) {
-  .footer svg {
-    font-size: 50px;
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .socialMedia {
+    gap: 0.75rem;
+  }
+
+  .socialMedia a {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+
+  .footer-links {
+    gap: 1rem;
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
+
+/* Large screens (1400px+) */
+@media only screen and (min-width: 1400px) {
   .footer {
-    margin-top: 50px;
+    padding: 4rem 4rem;
+  }
+
+  .footer-content {
+    max-width: 1400px;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    font-size: 1.75rem;
+  }
+
+  .footer-links {
+    gap: 3rem;
+  }
+
+  .footer-links a {
+    font-size: 1rem;
+  }
+
+  .socialMedia a {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+  }
+
+  .socialMedia svg {
+    font-size: 1.85rem;
+  }
+
+  .footer p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Large screens (1600px+) */
+@media only screen and (min-width: 1600px) {
+  .footer {
+    padding: 5rem 6rem;
+  }
+
+  .footer-content {
+    max-width: 1500px;
+    gap: 2.5rem;
+  }
+
+  .footer-brand {
+    font-size: 2rem;
+  }
+
+  .footer-links a {
+    font-size: 1.05rem;
+  }
+
+  .socialMedia {
+    gap: 1.5rem;
+  }
+
+  .socialMedia a {
+    width: 64px;
+    height: 64px;
+  }
+
+  .socialMedia svg {
+    font-size: 2rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+
+  .footer-divider {
+    max-width: 250px;
+  }
+}
+
+/* Ultra Wide screens (1920px+) */
+@media only screen and (min-width: 1920px) {
+  .footer {
+    padding: 6rem 8rem;
+  }
+
+  .footer-content {
+    max-width: 1700px;
+  }
+
+  .footer-brand {
+    font-size: 2.25rem;
+  }
+
+  .footer-links {
+    gap: 4rem;
+  }
+
+  .footer-links a {
+    font-size: 1.1rem;
+  }
+
+  .socialMedia a {
+    width: 68px;
+    height: 68px;
+    border-radius: 16px;
+  }
+
+  .socialMedia svg {
+    font-size: 2.15rem;
+  }
+
+  .footer p {
+    font-size: 1.05rem;
+  }
+}
+
+/* 4K screens (2560px+) */
+@media only screen and (min-width: 2560px) {
+  .footer-content {
+    max-width: 1900px;
+  }
+
+  .socialMedia a {
+    width: 72px;
+    height: 72px;
+  }
+
+  .socialMedia svg {
+    font-size: 2.25rem;
   }
 }

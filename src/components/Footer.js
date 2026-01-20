@@ -1,26 +1,61 @@
 import React from "react";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Footer.css";
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import resume from "../assets/RosendoVasquezNewResume.pdf";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div className="footer">
-      <div className="line"></div>
-      <div className="socialMedia">
-        <a href="https://github.com/rvasquez25/" target="_blank" rel="noreferrer">
+    <footer className="footer">
+      <div className="footer-content">
+        {/* <Link to="/" className="footer-brand">
+          RV
+        </Link> */}
+
+        {/* <div className="footer-links">
+          <Link to="/">Home</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/experience">Experience</Link>
+        </div> */}
+
+        <div className="socialMedia">
+          <a
+            href="https://github.com/rvasquez25/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
             <FontAwesomeIcon icon={faGithub} />
-        </a>
-        {/* <a href="https://www.linkedin.com/in/rosendo-vasquez-ii-0b271519b" target="_blank" rel="noreferrer">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rosendo-vasquez-113212249"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
-        </a> */}
-        {/* <a href="rosendovasquez915@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} />
-        </a> */}
+          </a>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Resume"
+          >
+            <FontAwesomeIcon icon={faFileAlt} />
+          </a>
+        </div>
+
+        <div className="footer-divider"></div>
+
+        <p>
+          &copy; {currentYear} Rosendo Vasquez II. All rights reserved.
+        </p>
       </div>
-      <p> &copy; 2022 https://flourishing-macaron-51d1a5.netlify.app/</p>
-    </div>
+    </footer>
   );
 }
 

@@ -1,91 +1,228 @@
-
+/* ==================== PROJECTS PAGE STYLES ==================== */
 .projects {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #3e497a;
-    margin-top: 100px;
-    background-image: linear-gradient(to left,#21325e 0%, #2E4684 21%, #3B5AAA 52%, #2E4684 78%, #21325e 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-  .projects .projectTitle {
-    text-align: center;
-    color: #3e497a;
-    font-size: 60px;
-    font-weight: bolder;
-  }
-  
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  padding-top: 100px;
+  padding-bottom: clamp(3rem, 8vw, 6rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-primary);
+}
+
+.projects h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+/* ==================== PROJECT LIST GRID ==================== */
+.projectList {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 clamp(1rem, 5vw, 4rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: clamp(1.5rem, 4vw, 2rem);
+  place-items: center;
+}
+
+/* ==================== PROJECT ITEM CARD ==================== */
+.projectItem {
+  width: 100%;
+  max-width: 350px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.projectItem:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-primary);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.projectItem .bgImage {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.projectItem:hover .bgImage {
+  border-color: var(--accent-primary);
+}
+
+.projectItem h1 {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  padding: 1rem 1.25rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+@media only screen and (max-width: 1300px) {
   .projectList {
-    width: 70vw;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  /* MENU ITEM STYLING */
-  
-  .projectItem {
-    border-radius: 15px;
-    width: 300px;
-    height: 300px;
-    margin: 40px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-  .projectItem:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
-  
-  .projectItem .bgImage {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    width: 100%;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .projectItem h1 {
-    font-size: 25px;
-    color: #131313;
-    /* background-color: #3e497a;
-    background-image: linear-gradient(to left,#21325e 0%, #2E4684 21%, #3B5AAA 52%, #5473C4 78%, #6480ca 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent; */
+}
+
+@media only screen and (max-width: 768px) {
+  .projects {
+    padding-top: 90px;
   }
 
-  @media only screen and (max-width: 1300px) {
-    .projectList {
-      grid-template-columns: 1fr 1fr;
-    }
+  .projectList {
+    grid-template-columns: 1fr;
   }
-  
-  @media only screen and (max-width: 800px) {
-    .projectList {
-      grid-template-columns: 1fr;
-    }
+
+  .projectItem {
+    max-width: 400px;
   }
-  
-  @media only screen and (max-width: 800px) {
-    .projectList {
-      width: 100%;
-    }
-    .projectItem {
-      width: 300px;
-      height: 300px;
-    }
+}
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    padding-top: 80px;
   }
+}
+
+@media only screen and (max-width: 450px) {
+  .projects {
+    padding-top: 75px;
+  }
+
+  .projectItem {
+    max-width: 100%;
+  }
+
+  .projectItem .bgImage {
+    height: 180px;
+  }
+}
+
+/* Large screens (1400px+) */
+@media only screen and (min-width: 1400px) {
+  .projects {
+    padding-top: 120px;
+    padding-bottom: 8rem;
+  }
+
+  .projects h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .projectList {
+    max-width: 1400px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  .projectItem {
+    max-width: 400px;
+  }
+
+  .projectItem .bgImage {
+    height: 240px;
+  }
+
+  .projectItem h1 {
+    font-size: 1.25rem;
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+/* Extra Large screens (1600px+) */
+@media only screen and (min-width: 1600px) {
+  .projects {
+    padding-top: 140px;
+    padding-bottom: 10rem;
+  }
+
+  .projects h1 {
+    font-size: 3.25rem;
+  }
+
+  .projectList {
+    max-width: 1500px;
+    gap: 3rem;
+  }
+
+  .projectItem {
+    max-width: 440px;
+    border-radius: 20px;
+  }
+
+  .projectItem .bgImage {
+    height: 260px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .projectItem h1 {
+    font-size: 1.35rem;
+  }
+}
+
+/* Ultra Wide screens (1920px+) */
+@media only screen and (min-width: 1920px) {
+  .projects {
+    padding-top: 160px;
+  }
+
+  .projects h1 {
+    font-size: 3.5rem;
+  }
+
+  .projectList {
+    max-width: 1700px;
+  }
+
+  .projectItem {
+    max-width: 480px;
+  }
+
+  .projectItem .bgImage {
+    height: 280px;
+  }
+
+  .projectItem h1 {
+    font-size: 1.5rem;
+    padding: 1.5rem 1.75rem;
+  }
+}
+
+/* 4K screens (2560px+) */
+@media only screen and (min-width: 2560px) {
+  .projectList {
+    max-width: 1900px;
+  }
+
+  .projectItem {
+    max-width: 520px;
+  }
+
+  .projectItem .bgImage {
+    height: 300px;
+  }
+}

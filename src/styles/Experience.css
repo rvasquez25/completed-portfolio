@@ -1,89 +1,178 @@
+/* ==================== EXPERIENCE PAGE STYLES ==================== */
 .experience {
-    margin-top: 100px;
-}
-.downloadCV {
-    display: flex;
-    justify-content: center;
-    margin-bottom: -100px;
+  padding-top: 100px;
+  padding-bottom: clamp(3rem, 8vw, 6rem);
+  min-height: 100vh;
+  background: var(--bg-primary);
 }
 
-.downloadCV a {
-    margin-top: 20px;
-    text-decoration: none;
-}
-.downloadCV a span {
-    display: none;
+/* Timeline Customization */
+.vertical-timeline {
+  padding: 0 clamp(1rem, 3vw, 2rem);
 }
 
-u {
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
+.vertical-timeline::before {
+  background: var(--border-color) !important;
 }
 
-.resumeTitle {
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.vertical-timeline-element-content {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-md) !important;
+  padding: clamp(1.25rem, 3vw, 1.75rem) !important;
+  transition: var(--transition) !important;
 }
 
-.resumeTitle h1 {
-    background-image: linear-gradient(to left,#21325e 0%, #2E4684 21%, #3B5AAA 52%, #2E4684 78%, #21325e 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+.vertical-timeline-element-content:hover {
+  background: var(--bg-card-hover) !important;
+  border-color: var(--accent-primary) !important;
+  transform: translateY(-2px);
 }
 
-.experience h2 {
-    background-image: linear-gradient(to left,#21325e 0%, #2E4684 21%, #3B5AAA 52%, #2E4684 78%, #21325e 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+.vertical-timeline-element-content-arrow {
+  border-right-color: var(--bg-card) !important;
 }
 
-@media only screen and (max-width: 719px) {
-    .downloadCV a img {
-    display: none;
-    }
-    .downloadCV a span {
-        display: flex;
-    }
-    .downloadCV a {
-        background: #131313;
-        color: #131313;
-        font-size: 18px;
-        font-weight: 600;
-        padding: 8px 16px;
-        margin-top: 20px;
-        border-radius: 6px;
-        border: 2px solid #131313;
-        transition: all 0.3s ease;
-        background-image: linear-gradient(to left,#21325e 0%, #2E4684 21%, #3B5AAA 52%, #2E4684 78%, #21325e 100%);
-        text-decoration: none;
-    }
-    
-    .downloadCV a:hover {
-        background: none;
-        color: #21325e;
-        background-image: linear-gradient(to left,#21325e 0%, #2E4684 21%, #3B5AAA 52%, #2E4684 78%, #21325e 100%);
-        background-size: 100%;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-    }
+.vertical-timeline-element-date {
+  color: var(--text-secondary) !important;
+  font-weight: 500 !important;
+  font-size: clamp(0.875rem, 2vw, 1rem) !important;
+}
+
+.vertical-timeline-element-title {
+  color: var(--text-primary) !important;
+  font-size: clamp(1rem, 2.5vw, 1.25rem) !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.vertical-timeline-element-content p {
+  color: var(--text-secondary) !important;
+  font-size: clamp(0.875rem, 2vw, 1rem) !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
+/* Timeline Icon Styling */
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px var(--bg-card), 0 0 0 8px var(--border-color) !important;
+}
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Timeline date positioning for larger screens */
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-date {
+    padding: 0 !important;
+  }
+}
+
+/* Mobile adjustments */
+@media only screen and (max-width: 768px) {
+  .experience {
+    padding-top: 90px;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .experience {
+    padding-top: 80px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .downloadCV {
-        margin-bottom: 20px;
-    }
+  .experience {
+    padding-top: 75px;
+  }
 }
-/* 
-.vertical-timeline-element--education:hover {
-    background-color: #131313;
-} */
+
+/* Large screens (1400px+) */
+@media only screen and (min-width: 1400px) {
+  .experience {
+    padding-top: 120px;
+    padding-bottom: 8rem;
+  }
+
+  .vertical-timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 2rem !important;
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 1.35rem !important;
+  }
+
+  .vertical-timeline-element-content p {
+    font-size: 1.05rem !important;
+  }
+}
+
+/* Extra Large screens (1600px+) */
+@media only screen and (min-width: 1600px) {
+  .experience {
+    padding-top: 140px;
+    padding-bottom: 10rem;
+  }
+
+  .vertical-timeline {
+    max-width: 1300px;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 2.25rem !important;
+    border-radius: 16px !important;
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 1.5rem !important;
+  }
+
+  .vertical-timeline-element-content p {
+    font-size: 1.1rem !important;
+    line-height: 1.8 !important;
+  }
+
+  .vertical-timeline-element-date {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Ultra Wide screens (1920px+) */
+@media only screen and (min-width: 1920px) {
+  .experience {
+    padding-top: 160px;
+  }
+
+  .vertical-timeline {
+    max-width: 1400px;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 2.5rem !important;
+    border-radius: 20px !important;
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 1.6rem !important;
+  }
+
+  .vertical-timeline-element-content p {
+    font-size: 1.15rem !important;
+  }
+}
+
+/* 4K screens (2560px+) */
+@media only screen and (min-width: 2560px) {
+  .vertical-timeline {
+    max-width: 1600px;
+  }
+}
