@@ -181,7 +181,7 @@ function Home() {
               <span className="typewriter">
                 <Typewriter
                   options={{
-                    strings: ["Web Developer", "Software Developer", "AI Engineer"],
+                    strings: ["Web Developer", "Software Developer", "AI Engineer", "Software Engineer"],
                     autoStart: true,
                     loop: true,
                   }}
