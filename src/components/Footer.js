@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Footer.css";
-import resume from "../assets/RosendoVasquezNewResume.pdf";
+import resume from "../assets/RosendosResume.pdf";
 
 function Footer() {
   const currentYear = new Date().getFullYear();

@@ -5,7 +5,7 @@ import pic from "../assets/profilepic.jpg";
 import cpCertification from "../assets/CodepathCertification.png";
 import udemyCert from "../assets/UdemyWebDevelopmentBootcampCertification.jpg";
 import machineLearningCert from "../assets/machinelearningcert.jpeg";
-import resume from "../assets/RosendoVasquezNewResume.pdf";
+import resume from "../assets/RosendosResume.pdf";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
